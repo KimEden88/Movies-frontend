@@ -26,13 +26,13 @@ const Movies = () => {
   return (
     <>
       <Hero />
-      <div className="bg-gray-900 h-screen flex flex-col justify-center items-center gap-x-16 text-white ">
+      <div className="bg-gray-900  flex flex-col justify-center items-center gap-x-16 text-white font-mono pt-16 ">
         <ul className="flex justify-center align-center flex-wrap gap-12">
           {movies &&
             movies.map((movie) => {
               return (
                 <div
-                  className=" w-[350px] h-[470px] bg-transparent cursor-pointer group perspective "
+                  className="m-8  w-[300px] h-[420px] bg-transparent cursor-pointer group perspective "
                   key={movie.id}
                 >
                   <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
@@ -44,18 +44,18 @@ const Movies = () => {
                       />
                     </div>
                     <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-[#E4F9F5] overflow-hidden">
-                      <div className="text-center flex flex-col items-center justify-center h-full text-[#222831] p-4">
+                      <div className="text-center flex flex-col items-center justify-center h-full text-[#222831] p-4 gap-1">
                         <h1 className="text-3xl mb-3 pb-2 font-semibold">
                           {movie.title}
                           <span className="text-sm">({movie.year})</span>
                         </h1>
                         <p>
-                          {movie.rating}.{Math.floor(Math.random() * 10)} Rating
+                          {movie.rating}.{Math.floor(Math.random() * 10)}/10
                         </p>
                         <p>By: {movie.director}</p>
-
-                        <p>{movie.plot}</p>
-                        <p>Duration: {movie.duration}.min</p>
+                        {/* <p>{movie.plot}</p> */}
+                        <p>( {movie.genre} )</p>
+                        <p>Duration: {movie.duration}.m</p>
                         <button className="bg-[#222831] px-6 py-2 font-semibold text-[#F7FBFC] rounded-full absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-5 scale-0 group-hover:scale-125">
                           <Link to={`/movies/${movie.id}`}>Watch Now</Link>
                         </button>

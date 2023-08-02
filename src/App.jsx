@@ -5,11 +5,11 @@ import Main from './components/layout/Main';
 
 function App() {
   return (
-    <>
+    <div className="flex min-h-screen flex-col">
       <Header />
       <Main />
       <Footer />
-    </>
+    </div>
   );
 }
 

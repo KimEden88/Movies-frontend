@@ -3,7 +3,7 @@ import { FaDev } from 'react-icons/fa';
 
 const Header = () => {
   return (
-    <header className=" bg-[#00ADB5] text-[#222831]  pt-2 pb-2  ">
+    <header className="h-15 bg-[#00ADB5] text-[#222831] font-mono  pt-2 pb-2  ">
       <nav className="flex justify-between w ">
         <ul className="text-2xl flex justify-between w-full p-2">
           <div className="flex justify-start cursor-pointer">

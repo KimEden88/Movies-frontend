@@ -6,7 +6,7 @@ import UpdateMovie from '../UpdateMovie';
 
 const Main = () => {
   return (
-    <main>
+    <main className="flex-1 bg-gray-900">
       <Routes>
         <Route
           path="/"

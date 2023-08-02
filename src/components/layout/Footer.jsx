@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className=" bg-[#00ADB5] text-[#222831]  pt-6 pb-6  flex justify-around align-center">
+    <footer className="h-15 bg-[#00ADB5] text-[#222831]  pt-6 pb-6  flex justify-around align-center items-center">
       <h3 className="text-xl font-semibold">
         © 2023 Copyright: Kim Eden WD#40
       </h3>

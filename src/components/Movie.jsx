@@ -31,11 +31,13 @@ const Movie = () => {
   return (
     <div>
       {movie && (
-        <>
+        <div className="font-mono text-[#F7FBFC]">
           <h1>{movie.title}</h1>
-          <Link to={`/movies/${id}/update`}>Update Movie</Link>
+          <button>
+            <Link to={`/movies/${id}/update`}>Update Movie</Link>
+          </button>
           <button onClick={handleDelete}>Delete</button>
-        </>
+        </div>
       )}
     </div>
   );

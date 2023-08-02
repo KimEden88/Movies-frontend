@@ -62,11 +62,12 @@ const NewMovie = () => {
   };
 
   return (
-    <div className="h-[100vh] flex align-center justify-center bg-gray-900">
+    <div className="h-[90vh] flex align-center justify-center items-center bg-gray-900 text-[#F7FBFC] font-mono">
       <form
         onSubmit={handleSubmit}
         className=" flex flex-col align-center justify-center gap-6"
       >
+        <h1 className="font-bold text-2xl pb-20">Please Fill Up The Form</h1>
         {/*Title*/}
         <div className="border-b-2 border-[#00ADB5]">
           <label
