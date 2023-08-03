@@ -29,14 +29,19 @@ const Movie = () => {
   };
 
   return (
-    <div>
+    <div className="flex justify-center items-center align-middle w-full h-full">
       {movie && (
         <div className="font-mono text-[#F7FBFC]">
           <h1>{movie.title}</h1>
-          <button>
+          <button className="bg-[#00ADB5] px-6 py-2 font-semibold text-[#F7FBFC] rounded-full mt-4 shadow-lg shadow-cyan-500/50 hover:animate-pulse">
             <Link to={`/movies/${id}/update`}>Update Movie</Link>
           </button>
-          <button onClick={handleDelete}>Delete</button>
+          <button
+            onClick={handleDelete}
+            className="bg-[#00ADB5] px-6 py-2 font-semibold text-[#F7FBFC] rounded-full mt-4 shadow-lg shadow-cyan-500/50 hover:animate-pulse hover:bg-[#EF6262]"
+          >
+            Delete
+          </button>
         </div>
       )}
     </div>
